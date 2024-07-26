@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="35791077-1c7f-469c-9078-d2d2e977cc83" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2jl1hQ4443eaagdUIAYnCo8aqlQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.backend.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LiquidadorSueldoTest.cuandoUnEmpleadoTrabajoCeroHoras_deberiaInformarQueNoSePuedeLiquidar">
+    <configuration name="LiquidadorSueldoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.backend.test" />
+      <option name="MAIN_CLASS_NAME" value="com.backend.test.LiquidadorSueldoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiquidadorSueldoTest.cuandoUnEmpleadoTrabajoCeroHoras_deberiaInformarQueNoSePuedeLiquidar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.backend.test" />
+      <option name="MAIN_CLASS_NAME" value="com.backend.test.LiquidadorSueldoTest" />
+      <option name="METHOD_NAME" value="cuandoUnEmpleadoTrabajoCeroHoras_deberiaInformarQueNoSePuedeLiquidar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LiquidadorSueldoTest.dadoUnEmpleadoEfectivo_deberiaLiquidarseSuSueldoYGenerarseReciboDigital" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clase2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.backend.test" />
+      <option name="MAIN_CLASS_NAME" value="com.backend.test.LiquidadorSueldoTest" />
+      <option name="METHOD_NAME" value="dadoUnEmpleadoEfectivo_deberiaLiquidarseSuSueldoYGenerarseReciboDigital" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LiquidadorSueldoTest.cuandoUnEmpleadoTrabajoCeroHoras_deberiaInformarQueNoSePuedeLiquidar" />
+        <item itemvalue="JUnit.LiquidadorSueldoTest.dadoUnEmpleadoEfectivo_deberiaLiquidarseSuSueldoYGenerarseReciboDigital" />
+        <item itemvalue="JUnit.LiquidadorSueldoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35791077-1c7f-469c-9078-d2d2e977cc83" name="Changes" comment="" />
+      <created>1721946972130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721946972130</updated>
+    </task>
+    <servers />
+  </component>
+</project>

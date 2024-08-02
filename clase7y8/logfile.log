@@ -1,0 +1,22 @@
+[2024-08-01 21:26:15] [ ERROR] [Animal:53] class java.lang.ClassNotFoundException: org.h2.Driver
+[2024-08-01 21:26:15] [ ERROR] [Animal:60] Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-08-01 21:33:16] [ INFO ] [Animal:33] Animal: 1 - Firulais - Perro
+[2024-08-01 21:33:16] [ INFO ] [Animal:33] Animal: 2 - Lola - Vaca
+[2024-08-01 21:33:16] [ INFO ] [Animal:33] Animal: 3 - Homero - Perro
+[2024-08-01 21:33:16] [ INFO ] [Animal:33] Animal: 4 - Pepe - Sapo
+[2024-08-01 21:33:16] [ INFO ] [Animal:33] Animal: 5 - Tuki - Loro
+[2024-08-01 21:33:16] [ INFO ] [Animal:37] --------------------------------------------------------------------
+[2024-08-01 21:33:16] [ INFO ] [Animal:45] Animal: 1 - Firulais - Perro
+[2024-08-01 21:33:16] [ INFO ] [Animal:45] Animal: 3 - Homero - Perro
+[2024-08-01 21:33:16] [ INFO ] [Animal:45] Animal: 4 - Pepe - Sapo
+[2024-08-01 21:33:16] [ INFO ] [Animal:45] Animal: 5 - Tuki - Loro
+[2024-08-01 21:37:16] [ INFO ] [Animal:33] Animal: 1 - Firulais - Perro
+[2024-08-01 21:37:16] [ INFO ] [Animal:33] Animal: 2 - Lola - Vaca
+[2024-08-01 21:37:16] [ INFO ] [Animal:33] Animal: 3 - Homero - Perro
+[2024-08-01 21:37:16] [ INFO ] [Animal:33] Animal: 4 - Pepe - Sapo
+[2024-08-01 21:37:16] [ INFO ] [Animal:33] Animal: 5 - Tuki - Loro
+[2024-08-01 21:37:16] [ INFO ] [Animal:37] --------------------------------------------------------------------
+[2024-08-01 21:37:16] [ INFO ] [Animal:45] Animal: 1 - Firulais - Perro
+[2024-08-01 21:37:16] [ INFO ] [Animal:45] Animal: 3 - Homero - Perro
+[2024-08-01 21:37:16] [ INFO ] [Animal:45] Animal: 4 - Pepe - Sapo
+[2024-08-01 21:37:16] [ INFO ] [Animal:45] Animal: 5 - Tuki - Loro

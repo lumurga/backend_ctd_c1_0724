@@ -1,0 +1,8 @@
+[2024-08-06 21:43:44] [ INFO ] [MedicamentoDaoH2:18] Medicamento a registrar: 
+Id: null - Codigo: 1236 - Nombre: Aspirina - Laboratorio: Bayer - Cantidad: 50 - Precio: $5000.0
+[2024-08-06 21:43:46] [ INFO ] [MedicamentoDaoH2:41] Medicamento guardado: 
+Id: 1 - Codigo: 1236 - Nombre: Aspirina - Laboratorio: Bayer - Cantidad: 50 - Precio: $5000.0
+[2024-08-06 21:45:20] [ INFO ] [MedicamentoDaoH2:18] Medicamento a registrar: 
+Id: null - Codigo: 1236 - Nombre: Aspirina - Laboratorio: Bayer - Cantidad: 50 - Precio: $5000.0
+[2024-08-06 21:45:22] [ INFO ] [MedicamentoDaoH2:41] Medicamento guardado: 
+Id: 2 - Codigo: 1236 - Nombre: Aspirina - Laboratorio: Bayer - Cantidad: 50 - Precio: $5000.0

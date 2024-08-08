@@ -1,0 +1,14 @@
+
+e
+java:S2259"HA "NullPointerException" could be thrown; "connection" is nullable here.(ôêÂœ8‘‚ÚÏ’2
+\
+java:S1118":Add a private constructor to hide the implicit public one.(òÿÿÿÿÿÿ8—ˆÙÏ’2
+J
+java:S4925
+"-Remove this "Class.forName()", it is useless.(›‡ªœ8ˆÙÏ’2
+S
+java:S6437"6Revoke and change this password, as it is compromised.(Í¯ÒÊ8£ˆÙÏ’2
+J
+java:S4925"-Remove this "Class.forName()", it is useless.(›‡ªœ8şˆÙÏ’2
+S
+java:S6437"6Revoke and change this password, as it is compromised.(úĞÑ­8Š‰ÙÏ’2

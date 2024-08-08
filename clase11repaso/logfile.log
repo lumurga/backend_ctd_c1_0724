@@ -1,0 +1,22 @@
+[2024-08-08 20:45:28] [ ERROR] [DomicilioDaoH2:42] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?, ?, ?, ?) [42104-224]
+[2024-08-08 20:45:28] [ INFO ] [DomicilioDaoH2:47] Tuvimos un problema
+[2024-08-08 20:45:28] [ ERROR] [DomicilioDaoH2:48] Table "DOMICILIOS" not found (this database is empty); SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES (?, ?, ?, ?) [42104-224]
+[2024-08-08 20:45:28] [ ERROR] [PacienteDaoH2:49] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA, DOMICILIO_ID) VALUES (?, ?, ?, ?, ?) [42104-224]
+[2024-08-08 20:45:28] [ INFO ] [PacienteDaoH2:54] Tuvimos un problema
+[2024-08-08 20:45:28] [ ERROR] [PacienteDaoH2:55] Table "PACIENTES" not found (this database is empty); SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA, DOMICILIO_ID) VALUES (?, ?, ?, ?, ?) [42104-224]
+[2024-08-08 20:48:04] [ ERROR] [DomicilioDaoH2:42] Valor Invalido "2" para el parametro "columnIndex"
+Invalid value "2" for parameter "columnIndex" [90008-224]
+[2024-08-08 20:48:04] [ INFO ] [DomicilioDaoH2:47] Tuvimos un problema
+[2024-08-08 20:48:04] [ ERROR] [DomicilioDaoH2:48] Valor Invalido "2" para el parametro "columnIndex"
+Invalid value "2" for parameter "columnIndex" [90008-224]
+[2024-08-08 20:48:04] [ ERROR] [PacienteDaoH2:49] Cannot invoke "com.backend.entity.Domicilio.getId()" because "domicilioRegistrado" is null
+[2024-08-08 20:48:04] [ INFO ] [PacienteDaoH2:54] Tuvimos un problema
+[2024-08-08 20:48:04] [ ERROR] [PacienteDaoH2:55] Cannot invoke "com.backend.entity.Domicilio.getId()" because "domicilioRegistrado" is null
+[2024-08-08 20:50:16] [ INFO ] [DomicilioDaoH2:39] Se ha registrado el domicilio: Id: 4 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-08-08 20:50:16] [ INFO ] [PacienteDaoH2:46] Se ha registrado el paciente: Id: 3 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 4 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-08-08 20:57:10] [ INFO ] [DomicilioDaoH2:39] Se ha registrado el domicilio: Id: 3 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia
+[2024-08-08 20:57:10] [ INFO ] [PacienteDaoH2:46] Se ha registrado el paciente: Id: 3 - Nombre: Nombre - Apellido: Apellido - DNI: 123456 - Fechas de ingreso: 2023-05-02 - Domicilio: Id: 3 - Calle: Calle - Numero: 13 - Localidad: Localidad - Provincia: Provincia

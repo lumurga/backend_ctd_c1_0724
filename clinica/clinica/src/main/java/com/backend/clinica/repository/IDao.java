@@ -1,4 +1,4 @@
-package com.backend.repository;
+package com.backend.clinica.repository;
 
 import java.util.List;
 

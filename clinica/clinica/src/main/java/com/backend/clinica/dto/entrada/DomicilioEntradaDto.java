@@ -16,8 +16,8 @@ public class DomicilioEntradaDto {
     @NotBlank(message = "Debe especificarse el nombre de la localidad")
     @Size(min = 1, max = 30, message = "La localidad debe tener entre 1 y 30 caracteres")
     private String localidad;
-    @NotBlank(message = "Debe especificarse el nombre de la calle")
-    @Size(min = 1, max = 30, message = "La calle debe tener entre 1 y 30 caracteres")
+    @NotBlank(message = "Debe especificarse el nombre de la provincia")
+    @Size(min = 1, max = 30, message = "La provincia debe tener entre 1 y 30 caracteres")
     private String provincia;
 
     public DomicilioEntradaDto() {

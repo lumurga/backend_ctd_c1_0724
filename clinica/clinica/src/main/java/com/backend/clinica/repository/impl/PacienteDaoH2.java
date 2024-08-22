@@ -1,17 +1,20 @@
-package com.backend.repository.impl;
+package com.backend.clinica.repository.impl;
 
-import com.backend.dbconnection.H2Connection;
-import com.backend.entity.Domicilio;
-import com.backend.entity.Paciente;
-import com.backend.repository.IDao;
-import org.apache.log4j.Logger;
+
+import com.backend.clinica.dbconnection.H2Connection;
+import com.backend.clinica.entity.Domicilio;
+import com.backend.clinica.entity.Paciente;
+import com.backend.clinica.repository.IDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PacienteDaoH2 implements IDao<Paciente> {
 
-    private final Logger LOGGER = Logger.getLogger(PacienteDaoH2.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(PacienteDaoH2.class);
 
     private DomicilioDaoH2 domicilioDaoH2;
 
@@ -109,7 +112,7 @@ public class PacienteDaoH2 implements IDao<Paciente> {
 
     @Override
     public List<Paciente> listarTodos() {
-        return null;
+        return new ArrayList<>();
     }
 
     private Paciente crearObjetoPaciente(ResultSet resultSet) throws SQLException {

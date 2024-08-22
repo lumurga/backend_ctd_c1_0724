@@ -2,8 +2,10 @@ package com.backend.clinica.controller;
 
 import com.backend.clinica.dto.entrada.PacienteEntradaDto;
 import com.backend.clinica.dto.salida.PacienteSalidaDto;
-import com.backend.clinica.entity.Paciente;
-import com.backend.service.IPacienteService;
+
+import com.backend.clinica.service.IPacienteService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -25,31 +27,33 @@ public class PacienteController {
 
     //POST
     @PostMapping("/registrar")
-    public PacienteSalidaDto registrarPaciente(@RequestBody @Valid PacienteEntradaDto pacienteEntradaDto){
-        return null;//pacienteService.registrarPaciente(paciente);
+    public ResponseEntity<PacienteSalidaDto> registrarPaciente(@RequestBody @Valid PacienteEntradaDto pacienteEntradaDto){
+        PacienteSalidaDto pacienteSalidaDto = pacienteService.registrarPaciente(pacienteEntradaDto);
+        return new ResponseEntity<>(pacienteSalidaDto, HttpStatus.CREATED);
     }
 
     //GET
     @GetMapping("/listar")
-    public List<PacienteSalidaDto> listarPacientes(){
-        return null;
+    public ResponseEntity<List<PacienteSalidaDto>> listarPacientes(){
+        return new ResponseEntity<>(pacienteService.listarPacientes(), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")//localhost:8080/pacientes/x
-    public PacienteSalidaDto buscarPacientePorId(@PathVariable Long id){
-        return null;//pacienteService.buscarPacientePorId(id);
+    public ResponseEntity<PacienteSalidaDto> buscarPacientePorId(@PathVariable Long id){
+        return new ResponseEntity<>(pacienteService.buscarPacientePorId(id), HttpStatus.OK);
     }
 
     //PUT
     @PutMapping("/actualizar/{id}")
-    public com.backend.entity.Paciente actualizarPaciente(@RequestBody com.backend.entity.Paciente paciente, @PathVariable Long id){
-        return null;
+    public ResponseEntity<PacienteSalidaDto> actualizarPaciente(@RequestBody @Valid PacienteEntradaDto paciente, @PathVariable Long id){
+        return new ResponseEntity<>(pacienteService.actualizarPaciente(paciente, id), HttpStatus.OK);
     }
 
     //DELETE
     @DeleteMapping("/eliminar")//localhost:8080/pacientes/eliminar?id=x
-    public void eliminarPaciente(@RequestParam Long id){
-
+    public ResponseEntity<String> eliminarPaciente(@RequestParam Long id){
+        pacienteService.eliminarPaciente(id);
+        return new ResponseEntity<>("Paciente eliminado correctamente", HttpStatus.NO_CONTENT);
     }
 
 

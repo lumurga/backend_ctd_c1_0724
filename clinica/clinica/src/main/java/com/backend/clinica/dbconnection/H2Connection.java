@@ -1,4 +1,4 @@
-package com.backend.dbconnection;
+package com.backend.clinica.dbconnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

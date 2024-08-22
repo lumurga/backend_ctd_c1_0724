@@ -1,16 +1,17 @@
-package com.backend.repository.impl;
+package com.backend.clinica.repository.impl;
 
-import com.backend.dbconnection.H2Connection;
-import com.backend.entity.Domicilio;
-import com.backend.repository.IDao;
-import org.apache.log4j.Logger;
+import com.backend.clinica.dbconnection.H2Connection;
+import com.backend.clinica.entity.Domicilio;
+import com.backend.clinica.repository.IDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 import java.util.List;
 
 public class DomicilioDaoH2 implements IDao<Domicilio> {
 
-    private final Logger LOGGER = Logger.getLogger(DomicilioDaoH2.class);
+    private final Logger LOGGER = LoggerFactory.getLogger(DomicilioDaoH2.class);
 
 
     @Override

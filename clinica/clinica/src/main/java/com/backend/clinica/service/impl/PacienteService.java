@@ -42,9 +42,17 @@ public class PacienteService implements IPacienteService {
         return pacienteSalidaDto;
     }
 
-    @Override//NO HAY QUE LANZAR LA EXCEPCION ACA
+    @Override//NO HAY QUE LANZAR LA EXCEPCION ACA NI EN NINGUN SERVICIO EN EL METODO buscarPorId
     public PacienteSalidaDto buscarPacientePorId(Long id) {
-        return null;
+        Paciente pacienteBuscado = pacienteRepository.findById(id).orElse(null);
+        LOGGER.info("Paciente buscado: {}", JsonPrinter.toString(pacienteBuscado));
+        PacienteSalidaDto pacienteEncontrado = null;
+        if(pacienteBuscado != null){
+            pacienteEncontrado = modelMapper.map(pacienteBuscado, PacienteSalidaDto.class);
+            LOGGER.info("Paciente encontrado: {}", JsonPrinter.toString(pacienteEncontrado));
+        } else LOGGER.error("No se ha encontrado el paciente con id {}", id);
+
+        return pacienteEncontrado;
     }
 
     @Override
@@ -72,8 +80,34 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public PacienteSalidaDto actualizarPaciente(PacienteEntradaDto pacienteEntradaDto, Long id) {
-        return null;
+        Paciente pacienteAActualizar = pacienteRepository.findById(id).orElse(null);
+        Paciente pacienteRecibido = modelMapper.map(pacienteEntradaDto, Paciente.class);
+        PacienteSalidaDto pacienteSalidaDto = null;
+
+        if (pacienteAActualizar != null){
+
+            pacienteRecibido.setId(pacienteAActualizar.getId());
+            pacienteRecibido.getDomicilio().setId(pacienteAActualizar.getDomicilio().getId());
+            pacienteAActualizar = pacienteRecibido;
+
+            //pacienteAActualizar.setNombre(pacienteRecibido.getNombre());
+            //pacienteAActualizar.setApellido(pacienteRecibido.getApellido());
+            //pacienteAActualizar.setDni(pacienteRecibido.getDni());
+            //pacienteAActualizar.setFechaIngreso(pacienteRecibido.getFechaIngreso());
+            //pacienteAActualizar.getDomicilio().setNumero(pacienteRecibido.getDomicilio().getNumero());
+            //pacienteAActualizar.getDomicilio().setLocalidad(pacienteRecibido.getDomicilio().getLocalidad());
+            //pacienteAActualizar.getDomicilio().setProvincia(pacienteRecibido.getDomicilio().getProvincia());
+
+            pacienteRepository.save(pacienteAActualizar);
+            pacienteSalidaDto = modelMapper.map(pacienteAActualizar, PacienteSalidaDto.class);
+            LOGGER.warn("Paciente actualizado: {}", JsonPrinter.toString(pacienteSalidaDto));
+
+        } else LOGGER.error("No fue posible actualizar el paciente porque no se encuentra en nuestra base de datos");
+            //lanzar exception
+
+        return pacienteSalidaDto;
     }
+
 
 
     private void configureMapping(){

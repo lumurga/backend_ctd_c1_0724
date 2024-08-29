@@ -15,6 +15,7 @@ public interface IPacienteService {
 
     void eliminarPaciente(Long id);
     PacienteSalidaDto actualizarPaciente(PacienteEntradaDto pacienteEntradaDto, Long id);
+    //PacienteSalidaDto buscarPacientePorDni(int dni);
 
 
 }

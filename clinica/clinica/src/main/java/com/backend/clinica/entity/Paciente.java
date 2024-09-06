@@ -10,7 +10,6 @@ public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @Column(length = 30, nullable = false)
     private String nombre;
 
